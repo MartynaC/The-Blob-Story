@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+body {
+  font-family: 'Brown';
+  margin: 0px;
+  padding: 0px;
+  background-color: #131413;
+  color: #131413; 
+}
+div.blob_project {
+  margin-top: 38%;
+  margin-left: 5%;
+ 
+}
+div.blob_project h1 {
+  font-size: 3em;
+  font-weight: 300;
+   color:#D1D2D2;
+}
+div.blob_project h2 {
+    font-size: 1.5em;
+  font-weight: 600;
+  color:#A28F9D;
+  margin-left: 8%;
+}
+.blobs-img {
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer {
+position: fixed;
+bottom: 15%;
+width: 100%;
+height: 60px;
+line-height: 23px;
+background-color: transparent;
+z-index: 999;
+}
+.footer .container {
+  width: 100%!important;
+
+}
+div.footer-right {
+  float: right;
+  margin-right: 2%;
+    font-size: 12px;
+    color: #131413;
+    
+    width: 7%;
+    background-color: #d1d1d1;
+    padding: 2%;
+      box-shadow: 15px 10px #A28F9D;
+
+}
+a#abt-menu {
+  padding: 0px;
+} 
+.footer-right a {
+  font-size: 0.8em;
+  padding: 0px!important;
+  color: #131413;
+  display: block;
+}
+.col-md-12 {
+	  margin: 0px;
+  padding: 0px;
+}
+img.gif-img {
+  width: 80%;
+  float: right;
+  margin: 0 8vw;
+    box-shadow: 15px 10px #A28F9D;
+    margin-top: 15vw;
+    border: 0.5px solid #131413;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0px;
+}
+.grid-item {
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+ 
+}
+.grid-item img {
+   width: 100%;
+   max-height:100%;
+   float:right;
+}
+
+div.next-to-gif {
+  background-color: #D1D2D2;
+  border: 1px solid #A28F9D;
+  height: 70vh; 
+  margin-top: 10vw;
+  box-shadow: 15px 10px #131413;
+  padding: 3%;
+}
+div.physical-box {
+  background-color: #131413;
+  color: #D1D2D2;   
+  height: 30vh; 
+  margin-top: 10vw;
+  box-shadow: 15px 10px #A28F9D;
+  margin-left: 10vw;
+}
+div.row.physical-first {
+  margin-left: 15px;
+  margin-bottom: 10vw;
+}
+div.row.physical-second {
+  margin-left: 5vw;
+  margin-bottom: 10vw;
+}
+h2.about-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5% 5% 0 5%;
+}
+h5.physical-text {
+   font-size: 1.5em;
+  font-weight: thin;
+  margin: 0 5% 0 5%;
+
+ 
+}
+video.sanatorium {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h5.about-text {
+   font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 5% 0 5%;
+ 
+}
+h3.about-text {
+   font-size: thin;
+  margin: 0 5% 0 5%;
+    font-family: 'Dosis';
+ 
+}
+h1 {
+  color: white;
+  margin: 50px;
+  font-size: 40px;
+}
+h1.about {
+  float: right;
+  right: 3%;
+  position: fixed;
+  top: 57%;
+  font-size: 1em;
+  color: black;
+    z-index: 999;
+}
+h1.home {
+  font-size: 1em;
+  top: 57%;
+ position: fixed;
+  color: black;
+  z-index: 999;
+}
+img.about-vid {
+	width: 100%;
+}
+.about-vid  {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.about-vid img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  max-width: 100%;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.about-vid .container {
+  position: relative;
+  z-index: 2;
+}
+
+div.about-vid .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  z-index: 1;
+}
+div.san_container {
+  max-width: 100%;
+}
+ video.sanatorium {
+  max-width: 100%;
+}
+
+h2 {
+	font-size: 20px;
+}

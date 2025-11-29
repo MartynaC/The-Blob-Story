@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CreativeCoding</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/visual_arts.css" rel="stylesheet">
+  </head>
+  <style>
+    /* PODSTAWOWE STYLE */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-fluid {
+      padding: 0;
+      max-width: 100%;
+    }
+
+    /* VIDEO HEADER - FULL WIDTH */
+    .about-vid {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .about-vid video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .blob_project h1 {
+      color: #fff;
+      font-size: 48px;
+      text-align: center;
+      padding: 40px;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    /* MAIN CONTENT AREA */
+    .main-content {
+      padding: 60px 40px;
+      background-color: #000;
+    }
+
+    /* CONTENT ROW: Title (3 cols) + Images (9 cols) */
+    .content-row {
+      display: flex;
+      margin-bottom: 100px;
+      gap: 40px;
+    }
+
+    /* LEFT: TITLE (3 columns = 25%) */
+    .title-column {
+      width: 25%;
+      flex-shrink: 0;
+    }
+
+    .title-column h1 {
+      color: #fff;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      line-height: 1.4;
+      position: sticky;
+      top: 60px;
+    }
+
+    /* RIGHT: IMAGES (9 columns = 75%) */
+    .images-column {
+      width: 75%;
+    }
+
+    /* IMAGES */
+    .blobs-img {
+      width: 70%;
+      height: auto;
+      display: block;
+      margin: auto;
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+    }
+
+    .blobs-img:hover {
+      transform: scale(1.02);
+    }
+
+    /* VIDEOS */
+    .sanatorium {
+      width: 70%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+
+    /* SMOOTH SCROLLING */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .content-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .title-column,
+      .images-column {
+        width: 100%;
+      }
+      
+      .title-column h1 {
+        font-size: 20px;
+        position: relative;
+        top: 0;
+      }
+    }
+  </style>
+  <body>
+    <div class="container-fluid">
+      <!-- VIDEO HEADER -->
+      <div class="about-vid">
+        <div class="overlay">
+          <div class="blob_project">
+            <h1>THE BLOB STORY</h1>
+          </div>
+        </div>
+        <video playsinline autoplay muted loop>
+          <source src="img/blob_blk_wht.mov" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        
+        <!-- ROW 1: INSPIRATION -->
+        <div class="content-row">
+          <div class="title-column">
+            <h1>INSPIRATION</h1>
+          </div>
+          <div class="images-column">
+            <img class="blobs-img" src="img/slime1.png"/>
+            <img class="blobs-img" src="img/slime2.png"/>
+          </div>
+        </div>
+
+        <!-- ROW 2: CONCEPT AND PROTOTYPING -->
+        <div class="content-row">
+          <div class="title-column">
+            <h1>CONCEPT AND PROTOTYPING</h1>
+          </div>
+          <div class="images-column">
+            <img class="blobs-img" src="img/IMG_0641.JPG"/>
+            <img class="blobs-img" src="img/blob_teta.jpg"/>
+            <img class="blobs-img" src="img/IMG_0384 2.jpg"/>
+            <img class="blobs-img" src="img/IMG_0634.JPG"/>
+            <img class="blobs-img" src="img/prototyp_empty.jpg"/>
+            <img class="blobs-img" src="img/IMG_0596.jpg"/>
+            <img class="blobs-img" src="img/IMG_0727.JPG"/>
+          </div>
+        </div>
+
+                <!-- ROW 3: SKELETON -->
+        <div class="content-row">
+          <div class="title-column">
+            <h1>SKELETON - THICK PLYWOOD<br>JOINTS - CUSTOM 3D PRINT</h1>
+          </div>
+          <div class="images-column">
+            <img class="blobs-img" src="img/IMG_0701.JPG"/>
+          </div>
+        </div>
+                <!-- ROW 6: CONCEPT PROVEN -->
+        <div class="content-row">
+          <div class="title-column">
+            <h1>CONCEPT PROVEN, LET'S GET STARTED</h1>
+          </div>
+          <div class="images-column">
+            <img class="blobs-img" src="img/IMG_0708.JPG"/>
+            <img class="blobs-img" src="img/IMG_0730.JPG"/>
+          </div>
+        </div>
+
+
+        <!-- ROW 4: ELASTIC TEXTILE -->
+        <div class="content-row">
+          <div class="title-column">
+            <h1>ELASTIC TEXTILE - CUSTOM SEWN SHAPE, LYCRA</h1>
+          </div>
+          <div class="images-column">
+            <img class="blobs-img" src="img/IMG_0759 2.jpg"/>
+          </div>
+        </div>
+
+        <!-- ROW 5: WHERE IS THE BLOBBINESS -->
+        <div class="content-row">
+          <div class="title-column">
+            <h1>PRETTY COOL, BUT WHERE IS THE BLOBBINESS...?</h1>
+          </div>
+          <div class="images-column">
+                        <video class="sanatorium" playsinline autoplay muted loop>
+              <source src="img/odklejanie.mp4" type="video/mp4">
+            </video>
+            <img class="blobs-img" src="img/IMG_1131.JPG"/>
+            <img class="blobs-img" src="img/IMG_1214.JPG"/>
+            <video class="sanatorium" playsinline autoplay muted loop>
+              <source src="img/IMG_1432.MOV" type="video/mp4">
+            </video>
+            
+          </div>
+        </div>
+
+
+
+<!-- ROW 7: LATEX STRONG -->
+<div class="content-row">
+  <div class="title-column">
+    <h1>LATEX IS PRETTY STRONG....NEED A NEW MECHANISM AND STRONG STEPPER MOTORS</h1>
+  </div>
+  <div class="images-column">
+    <video class="sanatorium" playsinline autoplay muted loop>
+      <source src="img/IMG_1197.MOV" type="video/mp4">
+    </video>
+    <video class="sanatorium" playsinline autoplay muted loop>
+      <source src="img/IMG_1166_4D46294D.MOV" type="video/mp4">
+    </video>
+    <img class="blobs-img" src="img/IMG_1249.JPG"/>
+    <img class="blobs-img" src="img/IMG_1411_7CF41417.JPG"/>
+  </div>
+</div>  
+
+
+<div class="content-row">
+  <div class="title-column">
+    <h1>Putting it all together / exhibitions</h1>
+  </div>
+  <div class="images-column">
+                <video class="sanatorium" playsinline autoplay muted loop>
+              <source src="img/IMG_3321_8B9B27AD.MOV" type="video/mp4">
+            </video>
+    <video class="sanatorium" playsinline autoplay muted loop>
+              <source src="img/IMG_3291_8232C56B.MOV" type="video/mp4">
+            </video>
+          <img class="blobs-img" src="img/IMG_1208.JPG"/>
+          <img class="blobs-img" src="img/blob1.jpg"/>
+    
+
+            <video class="sanatorium" playsinline autoplay muted loop>
+              <source src="img/IMG_8772_713F28BA.MOV" type="video/mp4">
+            </video>
+            <video class="sanatorium" playsinline autoplay muted loop>
+              <source src="img/joined_video_e959120710844553b92156903e55d0fc_759BB249.MP4" type="video/mp4">
+            </video>
+    <video class="sanatorium" playsinline autoplay muted loop>
+      <source src="img/IMG_2640_7BC239EF.MP4" type="video/mp4">
+    </video>
+    <video class="sanatorium" playsinline autoplay muted loop>
+      <source src="img/IMG_8205_6C8830EE.MOV" type="video/mp4">
+    </video>
+
+  </div>
+</div>
+
+        <!-- ROW 8: TERRIFIED CHILDREN -->
+        <div class="content-row">
+          <div class="title-column">
+            <h1>TERRIFIED CHILDREN - MISSION COMPLETE</h1>
+          </div>
+          <div class="images-column">
+                <img class="blobs-img" src="img/46821415_359367271290904_4964758409200009216_n.jpg"/>
+          </div>
+        </div>
+
+        <!-- ROW 9: THEATRE SCENOGRAPHY -->
+        <div class="content-row">
+          <div class="title-column">
+            <h1>A YOUNGER, BUT BIGGER BROTHER - THEATRE SCENOGRAPHY</h1>
+          </div>
+          <div class="images-column">
+             <img class="blobs-img" src="img/IMG_8847.JPG"/>
+            <img class="blobs-img" src="img/IMG_1928.JPG"/>
+            <video class="sanatorium" playsinline autoplay muted loop>
+              <source src="img/IMG_2159.mp4" type="video/mp4">
+            </video>
+            <img class="blobs-img" src="img/IMG_2947.JPG"/>
+            <img class="blobs-img" src="img/IMG_8530.JPG"/>
+            <img class="blobs-img" src="img/IMG_2979.JPG"/>
+            <video class="sanatorium" playsinline autoplay muted loop>
+              <source src="img/IMG_2158.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

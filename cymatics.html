@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cymatics Project</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <style>
+    /* PODSTAWOWE STYLE */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-fluid {
+      padding: 0;
+      max-width: 100%;
+    }
+
+    /* VIDEO HEADER - FULL WIDTH */
+    .about-vid {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .about-vid video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .main-title h1 {
+      color: #fff;
+      font-size: 72px;
+      text-align: center;
+      padding: 40px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    /* MAIN CONTENT AREA */
+    .main-content {
+      padding: 60px 40px;
+      background-color: #000;
+    }
+
+    /* CONTENT ROW: Title (3 cols) + Images (9 cols) */
+    .content-row {
+      display: flex;
+      margin-bottom: 100px;
+      gap: 40px;
+    }
+
+    /* LEFT: TITLE (3 columns = 25%) */
+    .title-column {
+      width: 25%;
+      flex-shrink: 0;
+    }
+
+    .title-column h1 {
+      color: #fff;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      line-height: 1.4;
+      position: sticky;
+      top: 60px;
+    }
+
+    /* Placeholder for empty titles */
+    .title-column.empty {
+      min-height: 100px;
+    }
+
+    /* RIGHT: IMAGES (9 columns = 75%) */
+    .images-column {
+      width: 75%;
+    }
+
+    .images-column img {
+      width: 90%;
+    }
+
+    /* IMAGES */
+    .project-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 30px 0;
+      transition: transform 0.3s;
+    }
+
+    .project-img:hover {
+      transform: scale(1.02);
+    }
+
+    /* VIDEOS */
+    .project-video {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 30px 0;
+    }
+
+    /* PLACEHOLDER IMAGE */
+    .placeholder-img {
+      width: 100%;
+      height: 500px;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0;
+      border: 2px dashed #444;
+      color: #666;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* SMOOTH SCROLLING */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .content-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .title-column,
+      .images-column {
+        width: 100%;
+      }
+      
+      .title-column h1 {
+        font-size: 20px;
+        position: relative;
+        top: 0;
+      }
+
+      .main-title h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+  <body>
+    <div class="container-fluid">
+      
+      <!-- VIDEO HEADER -->
+      <div class="about-vid">
+        <div class="overlay">
+          <div class="main-title">
+            <h1>CYMATICS</h1>
+          </div>
+        </div>
+        <video playsinline autoplay muted loop>
+          <source src="img/IMG_0029.MP4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        
+        <!-- ROW 1: INTRODUCTION -->
+        <div class="content-row">
+          <div class="title-column">
+
+          </div>
+          <div class="images-column">
+            <video class="project-video" playsinline autoplay muted loop>
+              <source src="img/IMG_0029.MP4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- ROW 2: EXPLORATION -->
+        <div class="content-row">
+          <div class="title-column">
+
+          </div>
+          <div class="images-column">
+            <video class="project-video" playsinline autoplay muted loop>
+              <source src="img/IMG_0031.MOV" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+        <!-- ROW 4: RESULTS -->
+        <div class="content-row">
+          <div class="title-column">
+
+          </div>
+          <div class="images-column">
+                 <img src="img/max2.png" alt="Opis 2" />
+          </div>
+        </div>
+
+        <!-- ROW 5: ADDITIONAL CONTENT -->
+        <div class="content-row">
+          <div class="title-column empty">
+            <!-- Empty space for future title -->
+          </div>
+          <div class="images-column">
+             <img src="img/max1.png" alt="Opis 2" />
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
